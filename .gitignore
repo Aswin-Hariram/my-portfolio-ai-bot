@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+.env.bak/
+env/
+ENV/
+
+# Flask cache and instance folders
+instance/
+*.pyc
+
+# macOS system files
+.DS_Store
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Testing cache
+.coverage
+.tox/
+nosetests.xml
+test-output/
+
+# Python tools
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Logs and local config
+*.log
+*.pot
+*.mo
+
+# Database files
+*.sqlite3
+*.db
+
+# Secret files
+*.env
+secrets.json
+credentials.json
+
+# Build files
+build/
+dist/
+*.egg-info/
