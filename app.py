@@ -113,6 +113,7 @@ chat_history = []
 CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 CORS(app, resources={r"/*": {"origins": "https://aswin-hariram.netlify.app"}})
 
+
 @app.route("/chat", methods=["POST"])
 def chat():
     user_input = request.json.get("input")
