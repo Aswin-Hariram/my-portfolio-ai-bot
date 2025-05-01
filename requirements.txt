@@ -1,12 +1,22 @@
-Flask==3.0.3
-flask-cors==4.0.0
-python-dotenv==1.0.1
-langchain==0.1.16
-langchain-community==0.0.34
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+
+langchain==0.1.14
+langchain-community==0.0.31
+# Remove specific version of langchain-huggingface to let pip resolve dependencies
+langchain-huggingface
 langchain-openai==0.1.3
-sentence-transformers==2.7.0
+python-dotenv
+# Update pydantic to a version compatible with FastAPI 0.110.0
+pydantic>=2.0.0
+python-multipart==0.0.9
+
 chromadb==0.4.24
-PyPDF2==3.0.1
-langchain_google_genai
-faiss-cpu
-gunicorn
+sentence-transformers>=2.6.0
+# Use a version of transformers compatible with newer tokenizers
+transformers>=4.40.0
+# Let pip resolve the tokenizers version
+tokenizers
+torch>=2.6.0
+
+pdfminer.six==20221105

@@ -54,3 +54,6 @@ credentials.json
 build/
 dist/
 *.egg-info/
+
+# Vector database
+chroma_db/
