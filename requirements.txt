@@ -19,6 +19,8 @@ transformers>=4.40.0
 tokenizers
 torch>=2.6.0
 pypdf
+# Add Hugging Face Xet Storage for better model download performance
+huggingface_hub[hf_xet]
 
 pdfminer.six==20221105
 gunicorn
