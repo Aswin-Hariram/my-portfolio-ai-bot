@@ -9,3 +9,4 @@ chromadb==0.4.24
 PyPDF2==3.0.1
 langchain_google_genai
 faiss-cpu
+gunicorn
