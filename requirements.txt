@@ -18,5 +18,7 @@ transformers>=4.40.0
 # Let pip resolve the tokenizers version
 tokenizers
 torch>=2.6.0
+pypdf
 
 pdfminer.six==20221105
+gunicorn
