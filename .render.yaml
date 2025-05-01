@@ -1,9 +1,11 @@
 services:
   - type: web
-    name: flask-app
+    name: fastapi-app
     runtime: python
-    buildCommand: ""
-    startCommand: gunicorn app:app
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --worker-class uvicorn.workers.UvicornWorker
     envVars:
-      - key: FLASK_ENV
-        value: production
+      - key: PORT
+        value: "10000"
+      - key: PYTHON_VERSION
+        value: "3.9.0"
