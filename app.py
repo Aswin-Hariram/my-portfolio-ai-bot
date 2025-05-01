@@ -110,9 +110,7 @@ chain = create_chain(vectorStore)
 chat_history = []
 
 # Enable CORS for the Flask app
-CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
-CORS(app, resources={r"/*": {"origins": "https://aswin-hariram.netlify.app"}})
-
+CORS(app) 
 @app.route("/chat", methods=["POST"])
 def chat():
     user_input = request.json.get("input")
