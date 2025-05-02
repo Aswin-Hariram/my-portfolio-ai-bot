@@ -2,3 +2,20 @@
 
 flask
 flask-cors
+langchain
+langchain-community
+langchain-huggingface
+langchain-openai
+python-dotenv
+pydantic
+python-multipart
+chromadb
+sentence-transformers
+torch
+transformers
+tokenizers
+pypdf
+huggingface_hub[hf_xet]
+pdfminer.six
+gunicorn
+requests
